@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+</head>
+
+<style>
+
+ body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+        
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&display=swap');
+
+body{
+	/* Using a dark background color for optimal contrast */
+	background-color: #000;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.underwater h1{
+	/* Font settings: sizing and a semi-transparent color */
+	font-size: 2.5rem;
+	color: #2c3e5010;
+	
+	/* Assigning an underwater image as the background */
+	background-image: url('https://w7.pngwing.com/pngs/183/509/png-transparent-under-water-scenery-sunlight-underwater-ray-star-ocean-atmosphere-cloud-computer-wallpaper.png');
+	
+	/* Clipping the background image to the outline of the text */
+	-webkit-background-clip:text;
+	
+	/* Setting a 10s infinite animation for a dynamic effect */
+	animation: waterEffect 10s infinite;
+}
+
+/* Animation to simulate flowing water */
+@keyframes waterEffect {
+	0% { background-position: left 0 top 0; }
+	100% { background-position: left 100% top 0; }
+}
+
+h1{
+
+text-align: center;
+
+}
+
+
+
+body
+{
+background-image: url('booking1.jpg');
+}
+
+</style>
+
+
+
+<body>
+   
+
+
+
+<div class="underwater">
+	<h1>FINAL PROCESSING</h1>
+</div>
+
+
+
+
+
+
+
+
+
+    
+    <form action="process_booking.php" method="POST">
+        <label for="bustype">Select a Bus type:</label>
+        <select name="bustype" id="bustype">
+            <option value="AC SEATER">AC SEATER</option>
+            <option value="NON A/C SLEEPER">A/C SLEEPER</option>
+            <option value="AC SLEEPER">AC SLEEPER</option>
+            <option value="NON AC SEATER">NON AC SEATER</option>
+
+
+     
+        </select>
+
+
+   
+
+
+        <br>
+
+        <label for="date">Select a Date:</label>
+        <input type="date" name="date" id="date" required>
+
+                
+
+        <br>
+
+        <label for="quantity">Number of Tickets:</label>
+        <input type="number" name="quantity" id="quantity" min="1" required>
+
+        <br>
+
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>        
+       
+        <br>
+  
+        
+
+        <label for="ph.on">ph.no:</label>
+        <input type="ph.no" name="ph.no" id="ph.no" required>
+
+        <br>
+
+        <label for="payment">Select Payment Method:</label>
+        <input type="radio" name="payment" id="credit-card" value="Credit Card" required>
+        <label for="credit-card">Credit Card</label>
+        <input type="radio" name="payment" id="paypal" value="PayPal" required>
+        <label for="paypal">PayPal</label>
+        <input type="radio" name="payment" id="gpay" value="gpay" required>
+        <label for="gpay">Gpay</label>
+        <input type="radio" name="payment" id="phonepe" value="phonepe" required>
+        <label for="phonepe">Phonepe</label>
+
+
+        <br>
+
+        <button type="submit" formaction="confirmation.html">Book Tickets</button>
+    </form>
+
+    <br>
+
+    <a href="bus.html">Back to available bus</a>
+
+    <br>
+
+    
+</body>
+</html>

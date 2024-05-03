@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus List</title>
+    <style>
+        body {
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            text-align: center;
+            background-image: url('bus2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+font-style: italic; 
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            animation: glow 2s infinite alternate, fadein 2s;
+            background-color: transparent;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px 5px #FFA500;
+            }
+            100% {
+                box-shadow: 0 0 20px 10px blue;
+            }
+        }
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            display: flex; /* Use flexbox to center align image and text */
+            align-items: center; /* Vertical alignment */
+            justify-content: center; /* Horizontal alignment */
+            flex-direction: column; /* Stack image and text vertically */
+        }
+
+        a {
+            text-decoration: none;
+      font-style: italic; 
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px; /
+            font-style: italic; 
+        }
+
+        a:hover {
+      font-style: italic; 
+            color: #FFA500;
+        }
+
+        .movie-img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Available Bus</h1>
+
+    <div>
+        <ul>
+        
+            <li>
+                    <img class="movie-img" src="1.jpg" alt="Tranzking">
+                    <a href="bus_details1.html?movie=Tranzking">The Tranzking</a>
+            </li>
+            <li>
+                <img class="movie-img" src="2.jpg" alt="orange travels">
+                <a href="bus_details2.html?movie=orange travels">orange travels</a>
+            </li>
+            <li>
+                <img class="movie-img" src="3.jpg" alt="sasitravles">
+                <a href="bus_details3.html?movie=sasitravles">Sasitravles</a>
+            </li>
+            <li>
+                <img class="movie-img" src="4.jpg" alt="Tvt travles">
+                <a href="bus_details4.html?movie=Tvt travles">Tvt travles</a>
+            </li>
+            <li>
+                <img class="movie-img" src="5.jpg" alt="TAT">
+                <a href="bus_details5.html?movie=TAT">TAT</a>
+            </li>
+           <li>
+                <img class="movie-img" src="6.jpg" alt="Thirumalaivasan">
+                <a href="bus_details6.html?movie=Thirumalaivasan">Thirumalaivasan</a>
+            </li>
+            <li>
+                <img class="movie-img" src="7.jpg" alt="intrcity">
+                <a href="bus_details7.html?movie=int rcity">intrcity</a>
+            </li>
+            <li>
+                <img class="movie-img" src="8.jpg" alt="Ybm">
+                <a href="bus_details8.html?movie=Ybm">Ybm</a>
+            </li>
+            <li>
+                <img class="movie-img" src="9.jpg" alt="Ybm(blm)">
+                <a href="bus_details9.html?movie=Ybm(blm)">Ybm(blm)</a>
+            </li>
+            <li>
+                <img class="movie-img" src="10.jpg" alt="Parveen Travels">
+                <a href="bus_details10.html?movie=Parveen Travels">Parveen Travels</a>
+            </li>
+             <li>
+                <img class="movie-img" src="11.jpg" alt="Vetri Travles">
+               <a href="bus_details11.html?movie=Vetri Travles"> Vetri Travles</a>
+            </li>
+                  
+        </ul>
+    </div>
+
+    <a href="index.html">Back to Home</a>
+</body>
+</html>

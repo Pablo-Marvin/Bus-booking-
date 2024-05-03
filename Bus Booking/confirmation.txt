@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmation</title>
+</head>
+<body>
+    <h1>Booking Confirmation</h1>
+    <p>Thank you for booking tickets for Avengers: Endgame.</p>
+    <p>Your booking details:</p>
+    <ul>
+        <li>Name: John Doe</li>
+        <li>Email: john@example.com</li>
+        <li>Movie: Avengers: Endgame</li>
+        <li>Showtime: 12:00 PM</li>
+        <li>Number of Tickets: 2</li>
+    </ul>
+    <p>Your booking reference number is: #123456</p>
+    <p>An email confirmation has been sent to your email address.</p>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
